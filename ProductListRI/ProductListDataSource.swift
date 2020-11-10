@@ -10,5 +10,4 @@ class ProductListDataSource: NSObject, UICollectionViewDataSource {
         return UICollectionViewCell()
     }
     
-    
 }
