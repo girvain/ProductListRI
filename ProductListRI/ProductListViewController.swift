@@ -14,12 +14,14 @@ class ProductListViewController: UICollectionViewController, UICollectionViewDel
     fileprivate let headerId = "headerId"
     fileprivate let padding: CGFloat = 16
 
-
+    @IBOutlet var myView: MyView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupCollectionViewLayout()
         setupCollectionView()
+        
     }
     
     fileprivate func setupCollectionViewLayout() {
@@ -31,11 +33,12 @@ class ProductListViewController: UICollectionViewController, UICollectionViewDel
     
     fileprivate func setupCollectionView() {
         collectionView.backgroundColor = .white
-        
+        collectionView.contentInsetAdjustmentBehavior = .never
         
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         
-        collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+        collectionView.register(HeaderView.self, forSupplementaryViewOfKind:
+            UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
     }
     
     

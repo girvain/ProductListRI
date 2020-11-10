@@ -1,5 +1,5 @@
 //
-//  HeaderView.swift
+//  MyView.swift
 //  ProductListRI
 //
 //  Created by Gavin Ross on 10/11/2020.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class HeaderView: UICollectionReusableView {
-    
+class MyView: UIView {
+
     @IBOutlet var contentView: UIView!
     @IBOutlet var imageView: UIImageView!
     
@@ -28,11 +28,19 @@ class HeaderView: UICollectionReusableView {
     }
     
     private func commonInit() {
-        Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)
+        Bundle.main.loadNibNamed("MyView", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
     }
     
+    
+    /*
+    // Only override draw() if you perform custom drawing.
+    // An empty implementation adversely affects performance during animation.
+    override func draw(_ rect: CGRect) {
+        // Drawing code
+    }
+    */
 
 }

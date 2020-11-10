@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="ProductListRI" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="G2q-Rq-JCG"/>
+                <outlet property="imageView" destination="KHc-N6-7Qt" id="8DV-6p-a2f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stretchy_header" translatesAutoresizingMaskIntoConstraints="NO" id="KHc-N6-7Qt">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KHc-N6-7Qt" secondAttribute="trailing" id="1v7-b1-49A"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KHc-N6-7Qt" secondAttribute="bottom" id="7KK-hX-eQn"/>
+                <constraint firstItem="KHc-N6-7Qt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lj1-7w-v51"/>
+                <constraint firstItem="KHc-N6-7Qt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rKQ-DT-jio"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="63.768115942028992" y="-1.0044642857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="stretchy_header" width="1000" height="800"/>
+    </resources>
+</document>
