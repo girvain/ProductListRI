@@ -13,7 +13,9 @@ class ProductListViewController: UICollectionViewController, UICollectionViewDel
     fileprivate let cellId = "cellId"
     fileprivate let headerId = "headerId"
     fileprivate let padding: CGFloat = 16
-
+    
+    var productStore: ProductStore?
+    
     @IBOutlet var myView: MyView!
     
     override func viewDidLoad() {
@@ -22,6 +24,8 @@ class ProductListViewController: UICollectionViewController, UICollectionViewDel
         setupCollectionViewLayout()
         setupCollectionView()
         
+        productStore = ProductStore()
+        productStore?.fetchData(url: "https://static-ri.ristack-3.nn4maws.net/v1/plp/en_gb/2506/products.json")
     }
     
     fileprivate func setupCollectionViewLayout() {

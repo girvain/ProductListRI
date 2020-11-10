@@ -11,6 +11,9 @@
 		864ED06E255AB70D00BC5E88 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864ED06D255AB70D00BC5E88 /* HeaderView.xib */; };
 		864ED070255AC8B900BC5E88 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864ED06F255AC8B900BC5E88 /* MyView.swift */; };
 		864ED072255AC8C400BC5E88 /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864ED071255AC8C400BC5E88 /* MyView.xib */; };
+		864ED079255AE8ED00BC5E88 /* ProductStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864ED078255AE8ED00BC5E88 /* ProductStore.swift */; };
+		864ED07B255AF88D00BC5E88 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864ED07A255AF88D00BC5E88 /* Product.swift */; };
+		864ED07D255B017A00BC5E88 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864ED07C255B017A00BC5E88 /* ProductList.swift */; };
 		A5D6CC0D2559DE98003386B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6CC0C2559DE98003386B5 /* AppDelegate.swift */; };
 		A5D6CC0F2559DE98003386B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6CC0E2559DE98003386B5 /* SceneDelegate.swift */; };
 		A5D6CC162559DE9E003386B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D6CC152559DE9E003386B5 /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 		864ED06D255AB70D00BC5E88 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		864ED06F255AC8B900BC5E88 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		864ED071255AC8C400BC5E88 /* MyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
+		864ED078255AE8ED00BC5E88 /* ProductStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStore.swift; sourceTree = "<group>"; };
+		864ED07A255AF88D00BC5E88 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		864ED07C255B017A00BC5E88 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 		A5D6CC092559DE98003386B5 /* ProductListRI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductListRI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D6CC0C2559DE98003386B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5D6CC0E2559DE98003386B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +92,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		864ED077255AE81200BC5E88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				864ED078255AE8ED00BC5E88 /* ProductStore.swift */,
+				864ED07A255AF88D00BC5E88 /* Product.swift */,
+				864ED07C255B017A00BC5E88 /* ProductList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A5D6CC002559DE98003386B5 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +125,7 @@
 		A5D6CC0B2559DE98003386B5 /* ProductListRI */ = {
 			isa = PBXGroup;
 			children = (
+				864ED077255AE81200BC5E88 /* Model */,
 				A5D6CC0C2559DE98003386B5 /* AppDelegate.swift */,
 				A5D6CC0E2559DE98003386B5 /* SceneDelegate.swift */,
 				A5D6CC3C2559E167003386B5 /* ProductListViewController.swift */,
@@ -277,11 +294,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				864ED070255AC8B900BC5E88 /* MyView.swift in Sources */,
+				864ED07B255AF88D00BC5E88 /* Product.swift in Sources */,
 				864ED06C255A9C6700BC5E88 /* HeaderView.swift in Sources */,
+				864ED07D255B017A00BC5E88 /* ProductList.swift in Sources */,
 				A5D6CC0D2559DE98003386B5 /* AppDelegate.swift in Sources */,
 				A5D6CC3E2559E167003386B5 /* ProductListViewController.swift in Sources */,
 				A5D6CC412559EF2C003386B5 /* ProductListDataSource.swift in Sources */,
 				A5D6CC0F2559DE98003386B5 /* SceneDelegate.swift in Sources */,
+				864ED079255AE8ED00BC5E88 /* ProductStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
