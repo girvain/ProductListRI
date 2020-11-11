@@ -20,6 +20,7 @@ class ProductCell: UICollectionViewCell {
     }
     
     private func commonInit() {
+        
         Bundle.main.loadNibNamed("ProductCell", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = self.bounds
