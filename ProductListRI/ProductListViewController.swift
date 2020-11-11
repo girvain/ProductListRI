@@ -39,8 +39,11 @@ class ProductListViewController: UICollectionViewController, UICollectionViewDel
         collectionView.backgroundColor = .white
         collectionView.contentInsetAdjustmentBehavior = .never
         
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
+//        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         
+        collectionView.register(ProductCell.self, forCellWithReuseIdentifier: cellId)
+
+        // Register the custom header
         collectionView.register(HeaderView.self, forSupplementaryViewOfKind:
             UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
     }
@@ -61,7 +64,7 @@ class ProductListViewController: UICollectionViewController, UICollectionViewDel
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-        cell.backgroundColor = .black
+//        cell.backgroundColor = .black
         return cell
     }
     

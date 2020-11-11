@@ -11,7 +11,8 @@ import UIKit
 class MyView: UIView {
 
     @IBOutlet var contentView: UIView!
-    @IBOutlet var imageView: UIImageView!
+    @IBInspectable @IBOutlet var imageView: UIImageView!
+    
     
     // For using init in code
     override init(frame: CGRect) {

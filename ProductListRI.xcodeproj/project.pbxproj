@@ -23,6 +23,10 @@
 		A5D6CC3E2559E167003386B5 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6CC3C2559E167003386B5 /* ProductListViewController.swift */; };
 		A5D6CC3F2559E167003386B5 /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D6CC3D2559E167003386B5 /* ProductListViewController.xib */; };
 		A5D6CC412559EF2C003386B5 /* ProductListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6CC402559EF2C003386B5 /* ProductListDataSource.swift */; };
+		A5D6CC44255B604A003386B5 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6CC42255B604A003386B5 /* TestViewController.swift */; };
+		A5D6CC45255B604A003386B5 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D6CC43255B604A003386B5 /* TestViewController.xib */; };
+		A5D6CC49255B6932003386B5 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D6CC47255B6932003386B5 /* ProductCell.xib */; };
+		A5D6CC4B255B6EAC003386B5 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6CC4A255B6EAC003386B5 /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		A5D6CC3C2559E167003386B5 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		A5D6CC3D2559E167003386B5 /* ProductListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
 		A5D6CC402559EF2C003386B5 /* ProductListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListDataSource.swift; sourceTree = "<group>"; };
+		A5D6CC42255B604A003386B5 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		A5D6CC43255B604A003386B5 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		A5D6CC47255B6932003386B5 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		A5D6CC4A255B6EAC003386B5 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,12 +137,16 @@
 				A5D6CC0C2559DE98003386B5 /* AppDelegate.swift */,
 				A5D6CC0E2559DE98003386B5 /* SceneDelegate.swift */,
 				A5D6CC3C2559E167003386B5 /* ProductListViewController.swift */,
+				A5D6CC3D2559E167003386B5 /* ProductListViewController.xib */,
 				864ED06B255A9C6700BC5E88 /* HeaderView.swift */,
 				864ED06F255AC8B900BC5E88 /* MyView.swift */,
 				864ED071255AC8C400BC5E88 /* MyView.xib */,
+				A5D6CC4A255B6EAC003386B5 /* ProductCell.swift */,
+				A5D6CC47255B6932003386B5 /* ProductCell.xib */,
 				864ED06D255AB70D00BC5E88 /* HeaderView.xib */,
 				A5D6CC402559EF2C003386B5 /* ProductListDataSource.swift */,
-				A5D6CC3D2559E167003386B5 /* ProductListViewController.xib */,
+				A5D6CC42255B604A003386B5 /* TestViewController.swift */,
+				A5D6CC43255B604A003386B5 /* TestViewController.xib */,
 				A5D6CC152559DE9E003386B5 /* Assets.xcassets */,
 				A5D6CC172559DE9E003386B5 /* LaunchScreen.storyboard */,
 				A5D6CC1A2559DE9E003386B5 /* Info.plist */,
@@ -268,6 +280,8 @@
 				A5D6CC3F2559E167003386B5 /* ProductListViewController.xib in Resources */,
 				A5D6CC162559DE9E003386B5 /* Assets.xcassets in Resources */,
 				864ED072255AC8C400BC5E88 /* MyView.xib in Resources */,
+				A5D6CC45255B604A003386B5 /* TestViewController.xib in Resources */,
+				A5D6CC49255B6932003386B5 /* ProductCell.xib in Resources */,
 				864ED06E255AB70D00BC5E88 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D6CC44255B604A003386B5 /* TestViewController.swift in Sources */,
+				A5D6CC4B255B6EAC003386B5 /* ProductCell.swift in Sources */,
 				864ED070255AC8B900BC5E88 /* MyView.swift in Sources */,
 				864ED07B255AF88D00BC5E88 /* Product.swift in Sources */,
 				864ED06C255A9C6700BC5E88 /* HeaderView.swift in Sources */,
